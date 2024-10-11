@@ -21,17 +21,13 @@ function TodoDetailPage() {
       <div className="container pt-1">
         {detailTodo != null ? (
           <div
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "center",
-            }}
+            style={{ display: "flex", flexDirection: "column", gap: "1rem" }}
           >
             <TodoDetail todo={detailTodo} />
             <button
               className="btn btn-primary"
               onClick={() => navigate(`/todos/${id}/edit`)} // Navigasi ke halaman edit
-              style={{ marginLeft: "auto" }} // Letakkan tombol di sebelah kanan
+              style={{ alignSelf: "center" }} // Letakkan tombol di tengah
             >
               Edit
             </button>
