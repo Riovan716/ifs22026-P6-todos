@@ -5,5 +5,7 @@ function useInput(defaultValue = "") {
     setValue(target.value);
   }
   return [value, handleValueChange, setValue];
-}
-export default useInput;
+  print("fawffa");
+} //test com
+
+export default useInput; 
