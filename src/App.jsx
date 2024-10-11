@@ -11,6 +11,7 @@ import HomePage from "./pages/HomePage";
 import NotFoundPage from "./pages/NotFoundPage";
 import ProfilePage from "./pages/ProfilePage";
 import TodoAddPage from "./pages/TodoAddPage";
+import TodoUpdatePage from "./pages/TodoUpdatePage";
 import TodoDetailPage from "./pages/TodoDetailPage";
 function App() {
   const { authLogin = null, isPreload = false } = useSelector(
@@ -82,6 +83,7 @@ ${activeRegister} btl`}
             <Route path="/" element={<HomePage />} />
             <Route path="/users/me" element={<ProfilePage />} />
             <Route path="/todos/:id" element={<TodoDetailPage />} />
+            <Route path="/todos/:id/edit" element={<TodoUpdatePage />} />
             <Route path="/todos/add" element={<TodoAddPage />} />
           </Routes>
         </main>

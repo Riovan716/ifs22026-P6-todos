@@ -23,6 +23,14 @@ function isDeleteTodoReducer(status = false, action = {}) {
       return status;
   }
 }
+function isUpdateTodoReducer(status = false, action = {}) {
+  switch (action.type) {
+    case ActionType.UPDATE_TODO:
+      return action.payload.status;
+    default:
+      return status;
+  }
+}
 function detailTodoReducer(todo = null, action = {}) {
   switch (action.type) {
     case ActionType.DETAIL_TODO:
@@ -35,5 +43,6 @@ export {
   todosReducer,
   isAddTodoReducer,
   isDeleteTodoReducer,
+  isUpdateTodoReducer,
   detailTodoReducer,
 };
