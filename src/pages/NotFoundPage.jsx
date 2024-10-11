@@ -4,7 +4,7 @@ function NotFoundPage() {
       {" "}
       <div className="text-center text-danger">
         {" "}
-        <h1>404</h1> <h3>Halaman Tidak ditemukan</h3>{" "}
+        <h1>404</h1> <h3>Halaman Tidak Ditemukan</h3>{" "}
       </div>{" "}
     </div>
   );

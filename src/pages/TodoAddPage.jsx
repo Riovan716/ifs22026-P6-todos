@@ -11,7 +11,7 @@ function TodoAddPage() {
     if (isAddTodo) {
       // eslint-disable-next-line no-undef
       Swal.fire({
-        position: "top-end",
+        position: "center",
         icon: "success",
         title: "Todo berhasil ditambahkan!",
         showConfirmButton: false,
